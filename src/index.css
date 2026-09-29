@@ -1,0 +1,207 @@
+/* Global reset and base styles for the StudentManage project */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 1200px;
+}
+
+/* Hero section with flexbox alignment */
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #0b2e5f 100%);
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 550px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form styling */
+.form-control, .form-select {
+  border: 1px solid #dfe7f1;
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Auth page */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #eef4ff 0%, #f6f9ff 100%);
+}
+
+/* Card and grid layout */
+.student-card,
+.stat-card,
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e7ecf4;
+}
+
+.student-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.stat-card {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation flexbox */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-2, .gap-3 {
+  gap: 0.75rem;
+}
+
+/* Student cards grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-md-3,
+.col-lg-3,
+.col-md-2,
+.col-md-4,
+.col-md-12,
+.col-lg-6,
+.col-md-6 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+
+  .auth-page {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 25px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* ID selector example */
+#mainNavbar {
+  justify-content: space-between;
+}
+
+/* Grouping selector example */
+.btn-primary,
+.btn-success,
+.btn-outline-light,
+.btn-light,
+.btn-secondary {
+  border-radius: 10px;
+}
+
+/* Universal selector example already covered with * */
